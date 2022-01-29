@@ -1,0 +1,50 @@
+/* /* //order  // age pore konta hobe seitar jonne
+/* by default every item order 0 */
+.item1{
+    order:1;
+}
+
+//flex-grow  //default value:: flex-grow:0;
+// x axis borabor je faka jaiga ta baki theke amra jodi 
+//flex-grow:1; diye dei tahole sei unujaye sobgula item grow korbe
+
+
+//flex-shrink:1; default value(window choto korle item choto hobe)
+// amra jodi window choto kori tahole item choto hobe ki hobe na seita korbe shrink
+//but amra jodi manually 0 kore dei tahole eita choto hobe na overflow hoye jabe
+//flex-shrink: 0; // jodi wrap deya na thake
+
+//flex-basis: 200px;  alternative of min-width of item (it responsive )
+//jodi window 200px er o choto hoye jai then eita choto hoye jabe jodio 200 px deya ache
+
+/* shorthand */
+.item{
+    flex:flex-grow, flex-shrink,flex-basis;
+} */ */
+.container
+
+.container{
+    display: flex;
+    flex-wrap: wrap;  /*window er baki item gula nicher line a chole asbe */
+    justify-content: space-between;  /*pura content(container) ta row wise change hobe*/
+    align-items: space-between;     /*every  row is a item (vertically)*/
+}
+.item{
+    flex-basis: 300px;
+    height: 300px;
+}
+.item-1{
+    background-color: antiquewhite;
+}
+.item-2{
+    background-color: rgb(38, 158, 68);
+}
+.item-3{
+    background-color: rgb(198, 238, 23);
+}
+.item-4{
+    background-color: rgb(28, 44, 192);
+}
+.item-5{
+    background-color: rgb(38, 202, 202);
+}
